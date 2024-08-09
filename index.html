@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Merge Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="move-sound" src="/Element Merge/assets/sounds/move-sound.mp3"></audio>
+    <audio id="background-music" src="/Element Merge/assets/sounds/background-music.mp3" loop></audio>
+    <div id="splash-screen">
+        <img id="logo" src="./assets/images/logo3.png" alt="Game Logo">
+        <button id="play-button">Play</button>
+    </div>
+    <div id="game-container" style="display: none;"> 
+        <img src="./assets/images/logo4.png" alt="Logo2" id="logo2">
+        <hr>
+        <h2>Score: <span id="score">0</span></h2>
+        <div id="board"></div>
+    </div>
+
+    <div id="game-over-screen" style="display: none;">
+        <div id="game-over-content">
+            <h1>Game Over</h1>
+            <p id="final-score">Your Score: 0</p>
+            <button id="play-again-button">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
