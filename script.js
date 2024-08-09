@@ -171,7 +171,7 @@ function mergeElements(element1, element2) {
         case 'tectonicsurge+continent':
             newElement = 'world';
 
-        // Add more cases as needed
+       
     }
 
     return newElement;
@@ -388,7 +388,7 @@ function updateTile(tile, element, isNew = false) {
     tile.classList.add("tile");
 
     if (element) {
-        tile.style.backgroundImage = `url('assets/images/${element}.png')`; // Set background image
+        tile.style.backgroundImage = `url('assets/images/${element}.png')`; 
         tile.style.backgroundSize = 'cover';
         tile.style.backgroundPosition = 'center';
         tile.style.backgroundRepeat = 'no-repeat';
@@ -396,10 +396,10 @@ function updateTile(tile, element, isNew = false) {
 
         if (isNew) {
             tile.classList.add("tile-spawn"); // Animation for spawning
-            setTimeout(() => tile.classList.remove("tile-spawn"), 200); // Short delay to remove class after animation
+            setTimeout(() => tile.classList.remove("tile-spawn"), 200);
         } else {
             tile.classList.add("tile-merge"); // Animation for merging
-            setTimeout(() => tile.classList.remove("tile-merge"), 200); // Short delay to remove class after animation
+            setTimeout(() => tile.classList.remove("tile-merge"), 200);
         }
     } else {
         tile.style.backgroundImage = ''; // Clear background image if no element

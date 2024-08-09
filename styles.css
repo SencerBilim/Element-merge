@@ -5,17 +5,17 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('./assets/images/background2.png'); /* Replace with your image path */
-    background-size: cover; /* Cover the entire screen */
+    background-image: url('./assets/images/background2.png'); 
+    background-size: cover;
     background-position: center;
     position: relative;
 }
 
 #splash-image {
     max-width: 80%;
-    max-height: 60vh; /* Adjust this value as needed to ensure the image doesn't dominate the screen */
+    max-height: 60vh; 
     height: auto;
-    margin-bottom: 20px; /* Add space below the image */
+    margin-bottom: 20px; 
 }
 
 #play-button {
@@ -45,16 +45,16 @@
 }
 
 #logo {
-    max-width: 50%; /* Adjust the size as needed */
+    max-width: 50%; 
     height: 350px;
-    max-width: 80%; /* Adjust the size as needed */
+    max-width: 80%; 
     height: 250px;
     margin-bottom: 350px; /* Space between logo and play button */
-    animation: slideDown 2s ease-out; /* Apply animation with duration and easing */
+    animation: slideDown 2s ease-out;
 }
 @media (max-width: 600px) {
     #logo {
-        max-width: 60%; /* Make the logo smaller on small screens */
+        max-width: 60%; 
         height: 150px;
         margin-bottom: 300px; /* Adjust space between logo and play button */
     }
@@ -62,20 +62,20 @@
 
 @keyframes slideDown {
     from {
-        transform: translateY(-100px); /* Start from above the screen */
-        opacity: 0; /* Start with invisible logo */
+        transform: translateY(-100px); 
+        opacity: 0; 
     }
     to {
-        transform: translateY(0); /* Move to its final position */
-        opacity: 1; /* End with visible logo */
+        transform: translateY(0); 
+        opacity: 1; 
     }
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-image: url('assets/images/background.png'); /* Path to your background image */
-    background-size: cover; /* Cover the entire viewport */
+    background-image: url('assets/images/background.png'); 
+    background-size: cover; 
     color: white;
     margin: 0;
     padding: 0;
@@ -87,8 +87,8 @@ hr {
 }
 
 #board {
-    width: 450px; /* Default width for larger screens */
-    height: 450px; /* Default height for larger screens */
+    width: 450px;
+    height: 450px; 
     background-color: #689785;
     border: 6px solid #a1b1ab;
     margin: 0 auto;
@@ -97,8 +97,8 @@ hr {
 }
 
 .tile {
-    width: 90px; /* Default size for larger screens */
-    height: 90px; /* Default size for larger screens */
+    width: 90px; 
+    height: 90px; 
     border: 5px solid #a1b1ab;
     font-size: 20px;
     font-weight: bold;
@@ -108,7 +108,7 @@ hr {
     box-sizing: border-box;
 }
 
-/* colored tiles */
+
 /* Basic Elements */
 .water { background-color: #00BFFF; 
     border: 2px solid white;}
@@ -129,7 +129,7 @@ hr {
 .wind { background-color: #B0C4DE; 
     border: 2px solid #F18F01;} 
 
-/* r 4 Elements */
+/* r 3 Elements */
 .ocean { background-color: #006994; 
     border: 2px solid #FF4500} 
 .inferno { background-color: #FF4500;
@@ -139,7 +139,7 @@ hr {
 .hurricane { background-color: #4682B4; 
     border: 2px solid #FF4500} 
 
-/* Tier 5 Elements */
+/* Tier 4 Elements */
 .island { background-color: #228B22;
     border: 2px solid #502274 } 
 .desert { background-color: #DEB887; 
@@ -153,7 +153,7 @@ hr {
 .continent { background-color: #1E90FF;
     border: 3px solid #00fff2} 
 
-/* Tier 6 Element */
+/* Tier 5 Element */
 .world { background-color: #FFD700; 
     border: 2px solid  #FFA552} 
 
@@ -162,7 +162,7 @@ hr {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.2); /* Slightly bigger */
+        transform: scale(1.2);
     }
     100% {
         transform: scale(1);
@@ -171,10 +171,10 @@ hr {
 
 @keyframes spawnAnimation {
     0% {
-        transform: scale(0.1); /* Start small */
+        transform: scale(0.1); 
     }
     100% {
-        transform: scale(1); /* Grow to full size */
+        transform: scale(1);
     }
 }
 
@@ -197,7 +197,7 @@ hr {
     justify-content: center;
     align-items: center;
     color: white;
-    z-index: 1000; /* Ensure it's on top of everything */
+    z-index: 1000; 
 }
 
 #game-over-content {
@@ -225,15 +225,15 @@ hr {
 /* Responsive styles */
 @media (max-width: 604px) {
     #board {
-        width: 90vw; /* Adjust width based on viewport width */
-        height: 90vw; /* Maintain aspect ratio */
-        border-width: 4px; /* Adjust border width for smaller screens */
+        width: 90vw; 
+        height: 90vw; 
+        border-width: 4px; 
     }
 
     .tile {
-        width: 18vw; /* Adjust tile size based on viewport width */
-        height: 18vw; /* Maintain aspect ratio */
-        font-size: 16px; /* Adjust font size */
-        border-width: 3px; /* Adjust border width */
+        width: 18vw; 
+        height: 18vw; 
+        font-size: 16px; 
+        border-width: 3px; 
     }
 }
