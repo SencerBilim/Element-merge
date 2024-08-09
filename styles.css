@@ -1,4 +1,3 @@
-
 /* Splash screen initially visible */
 #splash-screen {
     display: flex;
@@ -11,12 +10,14 @@
     background-position: center;
     position: relative;
 }
+
 #splash-image {
     max-width: 80%;
     max-height: 60vh; /* Adjust this value as needed to ensure the image doesn't dominate the screen */
     height: auto;
     margin-bottom: 20px; /* Add space below the image */
 }
+
 #play-button {
     padding: 10px 20px;
     font-size: 18px;
@@ -31,6 +32,7 @@
 #play-button:hover {
     background-color: #105fa0; 
 }
+
 /* Game container initially hidden */
 #game-container {
     display: none;
@@ -44,7 +46,6 @@
 #logo {
     max-width: 50%; /* Adjust the size as needed */
     height: 350px;
-    
     max-width: 80%; /* Adjust the size as needed */
     height: 250px;
     margin-bottom: 350px; /* Space between logo and play button */
@@ -62,12 +63,6 @@
     }
 }
 
-
-
-
-
-
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -77,7 +72,6 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden; 
-    
 }
 
 hr {
@@ -85,8 +79,8 @@ hr {
 }
 
 #board {
-    width: 450px; /* Updated width for 5x5 grid */
-    height: 450px; /* Updated height for 5x5 grid */
+    width: 450px; /* Default width for larger screens */
+    height: 450px; /* Default height for larger screens */
     background-color: #689785;
     border: 6px solid #a1b1ab;
     margin: 0 auto;
@@ -95,15 +89,15 @@ hr {
 }
 
 .tile {
-    width: 90px; /* Size of each tile */
-    height: 90px; /* Size of each tile */
+    width: 90px; /* Default size for larger screens */
+    height: 90px; /* Default size for larger screens */
     border: 5px solid #a1b1ab;
     font-size: 20px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+    box-sizing: border-box;
 }
 
 /* colored tiles */
@@ -127,9 +121,7 @@ hr {
 .wind { background-color: #B0C4DE; 
     border: 2px solid #F18F01;} 
 
-
-
-/*r 4 Elements */
+/* r 4 Elements */
 .ocean { background-color: #006994; 
     border: 2px solid #FF4500} 
 .inferno { background-color: #FF4500;
@@ -152,11 +144,10 @@ hr {
     border: 3px solid #00fff2}
 .continent { background-color: #1E90FF;
     border: 3px solid #00fff2} 
+
 /* Tier 6 Element */
 .world { background-color: #FFD700; 
     border: 2px solid  #FFA552} 
-
-
 
 @keyframes mergeAnimation {
     0% {
@@ -186,9 +177,6 @@ hr {
 .tile-spawn {
     animation: spawnAnimation 0.2s ease;
 }
-
-
-
 
 #game-over-screen {
     position: fixed;
@@ -224,4 +212,20 @@ hr {
 
 #play-again-button:hover {
     background-color: #105fa0;
+}
+
+/* Responsive styles */
+@media (max-width: 604px) {
+    #board {
+        width: 90vw; /* Adjust width based on viewport width */
+        height: 90vw; /* Maintain aspect ratio */
+        border-width: 4px; /* Adjust border width for smaller screens */
+    }
+
+    .tile {
+        width: 18vw; /* Adjust tile size based on viewport width */
+        height: 18vw; /* Maintain aspect ratio */
+        font-size: 16px; /* Adjust font size */
+        border-width: 3px; /* Adjust border width */
+    }
 }
