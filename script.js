@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const playButton = document.getElementById('play-button');
     const backgroundMusic = document.getElementById('background-music');
+    const moveSound = document.getElementById('move-sound');
+    const playButton = document.getElementById('play-button');
     const playAgainButton = document.getElementById('play-again-button');
 
     if (playButton) {
@@ -39,6 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+    function playMoveSound() {
+        moveSound.currentTime = 0; // Rewind to the start
+        moveSound.play();
+    }
 });
 //for phone players
 document.addEventListener('touchstart', (e) => {
