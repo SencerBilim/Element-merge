@@ -19,7 +19,7 @@
 }
 
 #play-button {
-    padding: 10px 20px;
+    padding: 10px 25px;
     font-size: 18px;
     background-color: #173f64; 
     color: white;
@@ -27,6 +27,7 @@
     border-radius: 5px;
     cursor: pointer;
     z-index: 1; 
+    margin-top: -150px;
 }
 
 #play-button:hover {
@@ -50,6 +51,13 @@
     height: 250px;
     margin-bottom: 350px; /* Space between logo and play button */
     animation: slideDown 2s ease-out; /* Apply animation with duration and easing */
+}
+@media (max-width: 600px) {
+    #logo {
+        max-width: 60%; /* Make the logo smaller on small screens */
+        height: 150px;
+        margin-bottom: 300px; /* Adjust space between logo and play button */
+    }
 }
 
 @keyframes slideDown {
