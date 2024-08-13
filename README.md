@@ -13,6 +13,7 @@ Responsive Design: Optimized for both desktop and mobile devices.
 Background Music & Sound Effects: Immerse yourself in the gameplay with background music and satisfying sound effects.
 Splash Screen: A welcoming splash screen with a Play button to start the game.
 Game Over Screen: Displays a game-over message when no more moves are possible.
+
 How to Play
 Start the Game: Click the Play button on the splash screen to start the game.
 Merge Elements: Use the arrow keys (or swipe on mobile) to move the tiles. When two tiles with the same element touch, they merge to form a new element.
